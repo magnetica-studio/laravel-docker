@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "preinstall": "docker run --rm -v $(pwd):/app composer install && sudo chown -R $USER:$USER .",
+        "preinstall": "docker run --rm -v $(pwd):/app composer install && sudo chown -R $USER .",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
